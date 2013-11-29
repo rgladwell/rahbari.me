@@ -14,7 +14,7 @@
     
     /* Scroll Spy / Smooth Scroll */    
     $('ul.nav').scrollspy();
-    $('.nav li a, a.scroll').bind('click', function(e) {
+    $('.nav li a.scroll, a.scroll').bind('click', function(e) {
        e.preventDefault();
        if ($(this).attr('href') == "#home") {
          $('html, body').stop().animate({ scrollTop: 0 }, 300);
